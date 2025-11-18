@@ -41,7 +41,7 @@ Assets Used
 <img width="651" height="459" alt="wifeframe" src="https://github.com/user-attachments/assets/c792dfb1-191e-4a4f-bd59-996b078a7780" />
 
 
-# 🙌 Author
+#  Author
 Arsath Noordeen
 
 Frontend Developer (HTML, CSS, JS Learner)
