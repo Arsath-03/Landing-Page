@@ -12,8 +12,6 @@ The website is designed to help beginners explore and start their coding journey
 
  Smooth button hover effects
 
- Attractive hero section with CTA button
-
  Simple navigation bar
 
  Footer with social media icons
