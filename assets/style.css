@@ -1,92 +1,162 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 header {
-    width: 100%;
-    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
+    padding: 20px 40px;
     align-items: center;
-    background: #111;
-    
-    
+    background:black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .logo {
-   background-color: #ddd;
-   padding-left: 50px;
-   padding-top: 8px;
-   border-radius: 30PX;
-   border: 1px solid #ff7b00;
+    font-size: 28px;
+    font-weight: bold;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: #111;
 }
 
 
-nav ul {
-    list-style: none;
+nav {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
-nav ul li a {
-    color: #fff;
+.nav-btn {
+    color:black;
     text-decoration: none;
-    font-size: 16px;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+    transition: 0.3s;
+    background:white;
 }
 
-nav ul li a:hover {
-    color: #ff7b00;
+.nav-btn:hover {
+    background: #ff7b00;
+    color: #111;
+    box-shadow: 0 0 10px rgba(255, 123, 0, 0.8);
 }
-
 
 .main {
-    text-align: center;
-    padding: 80px 20px;
-    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 50px;
+    background:#ff7b00;
     color: #fff;
+    flex-wrap: wrap;
+    gap: 30px;
+    
 }
 
-.main h1 {
-    font-size: 40px;
-    color: #ff7b00;
+.main-text {
+    width: 50%;
 }
 
-.main p {
-    margin-top: 15px;
-    font-size: 18px;
+.main-text h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.main-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.main-img img {
+   
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    
 }
 
 .btn {
-    margin-top: 20px;
-    padding: 10px 25px;
-    font-size: 16px;
+    padding: 14px 28px;
+    background: #ffffff;
     border: none;
-    background: #ff7b00;
     color: #000;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
     font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.2);
 }
 
 .btn:hover {
-    background: #ffa447;
+    background:black;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 123, 0, 0.6);
 }
 
 
-.courses {
-    padding: 60px 40px;
+.about {
     text-align: center;
+    padding: 60px 30px;
     background: #fff;
 }
 
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    width: 75%;
+    margin: 15px auto;
+    color: #444;
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tutor {
+    padding: 60px 30px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.tutor-box {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tutor-box img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.4);
+    margin-right: 100px;
+}
+
+.tutor-text {
+    max-width: 420px;
+    text-align: left;
+    line-height:30px;
+}
+
+.courses {
+    padding: 60px 30px;
+    background: #fff;
+    text-align: center;
+}
+
 .courses h2 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    color: #111;
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
 .course-container {
@@ -97,138 +167,210 @@ nav ul li a:hover {
 }
 
 .course-card {
-    width: 280px;           
     background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
     color: #fff;
     border: 2px solid #ff7b00;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.5);
 }
 
 .course-logo {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-}
-
-
-.course-card h3 {
-    color: #ff7b00;
-    margin-bottom: 10px;
-}
-
-.course-card p {
-    margin-bottom: 15px;
-    color: #ddd;
+    width: 70px;
+    margin-bottom: 12px;
 }
 
 .course-card button {
-    padding: 8px 20px;
-    border: none;
+    padding: 10px 20px;
     background: #ff7b00;
-    color: #000;
+    border: none;
+    border-radius: 6px;
+    margin-top: 5px;
     cursor: pointer;
-    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .course-card button:hover {
-    background: #ffa447;
+    background: #fff;
+    color: #111;
+}
+
+
+.contact {
+    padding: 70px 40px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff7b00;
+}
+
+.contact-form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #1c1c1c;
+    color: white;
+    font-size: 15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff7b00;
+    outline: none;
+}
+
+.contact .btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff7b00;
+    color: #111;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 26px;
+    color: #ff7b00;
+    background: #1c1c1c;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid #444;
+}
+
+.social-links a:hover {
+    background: #ff7b00;
+    color: #111;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 123, 0, 0.8);
 }
 
 
 footer {
-    margin-top: 40px;
+    background: #575656;
     padding: 20px;
     text-align: center;
-    background: #111;
-}
-
-footer a {
-    margin: 0 10px;
-    color: #ff7b00;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-footer a:hover {
     color: #fff;
+    font-size: 14px;
 }
-
 
 @media (max-width: 600px) {
 
     
-    header {
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-    }
-
-    .logo {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 5px;
-        width: fit-content;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-    }
-
-
-    
     .main {
-        padding: 60px 20px;
-    }
-
-    .main h1 {
-        font-size: 28px;
-        line-height: 34px;
-    }
-
-    .main p {
-        font-size: 16px;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 12px;
-        font-size: 17px;
-    }
-
-
-
-    .courses {
+        flex-direction: column;
+        text-align: center;
         padding: 40px 20px;
     }
 
+    .main-text, 
+    .main-img {
+        width: 100%;
+    }
+
+    .main-img img {
+        width: 85%;
+        margin: auto;
+    }
+
+    .tutor-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tutor-box img {
+        width: 150px;
+        border-radius: 10px;
+        margin: 0 auto;       
+        display: block;
+    }
+
+    .tutor-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+
     .course-container {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
+        align-items: center;
     }
 
     .course-card {
+        width: 90%;
+    }
+
+
+    .contact-form {
         width: 100%;
+        padding: 0 15px;
+        gap: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
         padding: 20px;
     }
 
-    .course-logo {
-        width: 65px;
-        height: 65px;
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
-
-    
-    footer a {
-        font-size: 20px;
-        margin: 0 8px;
+    .nav-btn {
+        padding: 8px 14px;
     }
 }
-
