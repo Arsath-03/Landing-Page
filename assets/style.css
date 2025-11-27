@@ -1,0 +1,376 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    background:black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: #111;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    color:black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+    transition: 0.3s;
+    background:white;
+}
+
+.nav-btn:hover {
+    background: #ff7b00;
+    color: #111;
+    box-shadow: 0 0 10px rgba(255, 123, 0, 0.8);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 50px;
+    background:#ff7b00;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.main-text {
+    width: 50%;
+}
+
+.main-text h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.main-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.main-img img {
+   
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    
+}
+
+.btn {
+    padding: 14px 28px;
+    background: #ffffff;
+    border: none;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.2);
+}
+
+.btn:hover {
+    background:black;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 123, 0, 0.6);
+}
+
+
+.about {
+    text-align: center;
+    padding: 60px 30px;
+    background: #fff;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    width: 75%;
+    margin: 15px auto;
+    color: #444;
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tutor {
+    padding: 60px 30px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.tutor-box {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tutor-box img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.4);
+    margin-right: 100px;
+}
+
+.tutor-text {
+    max-width: 420px;
+    text-align: left;
+    line-height:30px;
+}
+
+.courses {
+    padding: 60px 30px;
+    background: #fff;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: #111;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    color: #fff;
+    border: 2px solid #ff7b00;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.5);
+}
+
+.course-logo {
+    width: 70px;
+    margin-bottom: 12px;
+}
+
+.course-card button {
+    padding: 10px 20px;
+    background: #ff7b00;
+    border: none;
+    border-radius: 6px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.course-card button:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+.contact {
+    padding: 70px 40px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff7b00;
+}
+
+.contact-form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #1c1c1c;
+    color: white;
+    font-size: 15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff7b00;
+    outline: none;
+}
+
+.contact .btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff7b00;
+    color: #111;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 26px;
+    color: #ff7b00;
+    background: #1c1c1c;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid #444;
+}
+
+.social-links a:hover {
+    background: #ff7b00;
+    color: #111;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 123, 0, 0.8);
+}
+
+
+footer {
+    background: #575656;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .main-text, 
+    .main-img {
+        width: 100%;
+    }
+
+    .main-img img {
+        width: 85%;
+        margin: auto;
+    }
+
+    .tutor-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tutor-box img {
+        width: 150px;
+        border-radius: 10px;
+        margin: 0 auto;       
+        display: block;
+    }
+
+    .tutor-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    .course-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+
+
+    .contact-form {
+        width: 100%;
+        padding: 0 15px;
+        gap: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        padding: 8px 14px;
+    }
+}
